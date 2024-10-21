@@ -7,16 +7,34 @@
 
     <title>Change background</title>
     <link rel="stylesheet" href="/style.css">
-    <script src="/script.js"></script>
+   <!-- <script src="/script.js"></script> -->
  </head>
     <body>
+
+
       <div style="text-align: center;" > 
-        <button id="click1" onclick="click1()" >YES</button>
+        <button id="click1" onclick="change1()" >YES</button>
       </div>
+
+      <script>
+
+    function change1(){
+  
+          alert("Thanks");
+ }
+      </script>
+
      
       <div style="text-align: center ;">
-        <button  id="click2" onclick="moveButton()" >NO</button>
+        <button  id="click2" onclick="moveButton()">NO</button>
       </div>
+
+      <script> function moveButton() {
+        const button = document.getElementById('click2');
+              button.style.left = Math.random() * window.innerHeight + 'px';
+              button.style.top = Math.random() * window.innerWidth   + 'px';
+      
+ }</script>
       <h1 style="text-align: center ;" style="color: blue;">
         <a  href="https://www.facebook.com/vankhanh.mai.5205" target="_blank">ANH KHANH CO DEP TRAI HAY KHONG</a></h1>
     
