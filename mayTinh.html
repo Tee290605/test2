@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(skyblue, lightpink);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            margin-top: 100px;
+            font-size: large;
+        }
+
+        .lop1{
+            margin-top: 100px;
+            padding-left: 10px ;
+            border: 10%;
+        }
+
+       #id1, #id2{
+        border: 30px;
+        margin: 50px;
+       min-height: 50px;
+        min-width: 100px;
+        height: auto;
+        width: auto;
+        box-shadow: 1px 5px 5px rgb(32, 96, 155);
+        
+       }
+
+
+    </style>
+</head>
+<body>
+    <b>
+        BẠN CÓ MUỐN BIẾT CÁCH ĐỂ LỪA MẤY THẰNG NGU KHÔNG? <Br> SAU ĐÂY TÔI SẼ HƯỚNG DẪN CHO BẠN!
+    </b>
+    
+    <div class="lop1">
+        <button id="id1" >TOP 1</button>
+        <button id="id2">TOP 2</button>
+    </div>
+    <script>
+          var tenK = ['Khanh', 'Khánh', 'KHÁNH', "KHANH"];
+
+           document.getElementById('id2').addEventListener('click' , function(){
+            var nhap = prompt("Vui lòng nhập tên của bạn để tiếp tục:", "");
+           if(nhap==''){
+            confirm(" Vui lòng nhập tên")
+           }
+            else {if(!tenK.includes(nhap) ){
+                document.getElementById("id2").innerHTML = " Vâng! Bạn là 1 đứa ngu";
+            } else{
+                document.getElementById("id2").innerHTML = " Vâng! là một người thông minh" ;
+            }}
+           });
+    
+    </script>
+  
+</body>
+</html>
